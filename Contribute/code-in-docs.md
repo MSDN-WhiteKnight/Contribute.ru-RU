@@ -7,12 +7,12 @@ ms.date: 03/03/2020
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 4aa34196f59a69651dd19add35a0351dd9b5d59b
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 4e57af6a1fe9a9d3799f09cb04f3bd3f0b9b712d
+ms.sourcegitcommit: 59e77d2fb9c38cccbacde9d2a7df61ae58c38fa4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "78336469"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84421052"
 ---
 # <a name="how-to-include-code-in-docs"></a>Включение кода в документы
 
@@ -378,12 +378,14 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
   * Относительный путь в файловой системе, который указывает файл фрагмента кода для ссылки.
 
 * `<attribute>` и `<attribute-value>` (*необязательно*)
-  * Используются вместе для указания способа получения кода из файла и его отображения:
-    * `range`: `1,3-5` Диапазон строк. Этот пример содержит строки 1, 3, 4 и 5.
-    * `id`: `snippet_Create` Идентификатор фрагмента, который нужно вставить из файла кода. Это значение не может существовать одновременно с диапазоном.
-    * `highlight`: `2-4,6` Диапазон и (или) номера строк, которые должны выделяться в создаваемом фрагменте кода. Нумерация задается относительно отображаемых строк (в соответствии с диапазоном или идентификатором), а не файла.
-    * `interactive`: `cloudshell-powershell`, `cloudshell-bash`, `try-dotnet`, `try-dotnet-class`, `try-dotnet-method` Строковое значение, определяющее тип используемой интерактивности.
-    * Сведения о представлении имени тега в исходных файлах фрагмента кода для каждого языка см. в разделе с [рекомендациями по DocFX](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html#tag-name-representation-in-code-snippet-source-file).
+
+  Используются вместе для указания способа получения кода из файла и его отображения:
+
+  * `range`: `1,3-5` Диапазон строк. Этот пример содержит строки 1, 3, 4 и 5.
+  * `id`: `snippet_Create` Идентификатор фрагмента, который нужно вставить из файла кода. Это значение не может существовать одновременно с диапазоном.
+  * `highlight`: `2-4,6` Диапазон и (или) номера строк, которые должны выделяться в создаваемом фрагменте кода. Нумерация задается относительно отображаемых строк (в соответствии с диапазоном или идентификатором), а не файла.
+  * `interactive`: `cloudshell-powershell`, `cloudshell-bash`, `try-dotnet`, `try-dotnet-class`, `try-dotnet-method` Строковое значение, определяющее тип используемой интерактивности.
+  * Сведения о представлении имени тега в исходных файлах фрагмента кода для каждого языка см. в разделе с [рекомендациями по DocFX](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html#tag-name-representation-in-code-snippet-source-file).
 
 ## <a name="supported-languages"></a>Поддерживаемые языки
 
