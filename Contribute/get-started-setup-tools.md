@@ -64,14 +64,14 @@ Markdown — это упрощенный язык разметки, которы
 > [!TIP]
 > Чтобы запустить VS Code и открыть текущую папку, выполните команду `code .` в командной строке или оболочке Bash. Если текущая папка содержится в локальном репозитории Git, в Visual Studio Code автоматически отобразятся данные об интеграции с GitHub.
 
-## <a name="docs-authoring-pack"></a>Пакет Docs Authoring
-Установите пакет Docs Authoring для Visual Studio Code. Этот набор расширений предоставляет основные средства для редактирования документов на языке Markdown и включает функцию предварительного просмотра, которая позволяет оценить соответствие стилю docs.microsoft.com.
+## <a name="docs-authoring-pack"></a>Пакет создания документации
+Установите пакет Docs Authoring Pack для создания документации для Visual Studio Code. Этот набор расширений предоставляет основные средства для редактирования документов на языке Markdown и включает функцию предварительного просмотра, которая позволяет оценить соответствие стилю docs.microsoft.com.
 
-   На странице [Marketplace](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) выберите **Install** или в VS Code в списке расширений найдите `docsmsft.docs-authoring-pack`. 
+   На странице [Marketplace](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) выберите **Install** (Установить) или в VS Code в списке расширений найдите `docsmsft.docs-authoring-pack`.   
 
-   В VS Code пакет Docs Authoring можно открыть с помощью ALT+M. Панель инструментов по умолчанию скрыта. Чтобы отобразить панель инструментов измените настройки VS Code (CTRL+запятая) при помощи настраиваемого параметра "markdown.showToolbar": true.
+   В VS Code пакет Docs Authoring Pack можно открыть с помощью клавиш ALT+M. Панель инструментов по умолчанию скрыта. Чтобы отобразить ее, измените настройки VS Code (CTRL+запятая) при помощи настраиваемого параметра "markdown.showToolbar": true.
 
-   Дополнительные сведения см. на странице [Docs Authoring Pack](how-to-write-docs-auth-pack.md).
+   Дополнительные сведения см. на странице справки по [Docs Authoring Pack](how-to-write-docs-auth-pack.md).
 
 
 ## <a name="next-steps"></a>Дальнейшие действия
