@@ -7,12 +7,12 @@ ms.custom: external-contributor-guide
 author: gewarren
 ms.author: gewarren
 ms.date: 03/31/2020
-ms.openlocfilehash: ca29d4b9e81f8af3b680367b210bd1734860687d
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 94ba4cefd9aff70b38502aa397a3761127c8089f
+ms.sourcegitcommit: 9852045bac75fd5d90c0ffc88d2a17dd45ba015f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "80624743"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85107119"
 ---
 # <a name="use-links-in-documentation"></a>Использование ссылок в документации
 
@@ -185,9 +185,9 @@ To go to a section on another page.
 
 Примеры:
 
-- **\<xref:System.String>** отображается как <xref:System.String>.
+- **\<xref:System.String>** отображается как <xref:System.String>
 
-- **\<xref:System.String?displayProperty=nameWithType>** отображается как <xref:System.String?displayProperty=nameWithType>.
+- **\<xref:System.String?displayProperty=nameWithType>** отображается как <xref:System.String?displayProperty=nameWithType>
 
 - **\[Класс String](xref:System.String)** отображается как [Класс String](xref:System.String).
 
@@ -241,7 +241,7 @@ To go to a section on another page.
 
 Примеры кодирования:
 
-- `System.Threading.Tasks.Task``1` кодируется как `System.Threading.Tasks.Task%601` (см. [раздел об универсальных типах](#generic-types)).
+- ``System.Threading.Tasks.Task`1`` кодируется как `System.Threading.Tasks.Task%601` (см. [раздел об универсальных типах](#generic-types)).
 
 - `System.Exception.#ctor` кодируется как `System.Exception.%23ctor`.
 
