@@ -54,7 +54,7 @@
       items:
         - name: Как стать соавтором
           href: dotnet/dotnet-contribute.md
-        - name: Принципы использования меток и проектов
+        - name: 'Стратегия: метки, проекты и вехи'
           href: dotnet/labels-projects.md
         - name: Соглашения о стиле
           href: dotnet/dotnet-style-guide.md
