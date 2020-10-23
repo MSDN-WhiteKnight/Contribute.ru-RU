@@ -54,6 +54,8 @@
       items:
         - name: Как стать соавтором
           href: dotnet/dotnet-contribute.md
+        - name: Документация по анализу кода
+          href: dotnet/dotnet-contribute-code-analysis.md
         - name: 'Стратегия: метки, проекты и вехи'
           href: dotnet/labels-projects.md
         - name: Соглашения о стиле
