@@ -7,12 +7,12 @@ ms.date: 03/03/2020
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 4e57af6a1fe9a9d3799f09cb04f3bd3f0b9b712d
-ms.sourcegitcommit: 59e77d2fb9c38cccbacde9d2a7df61ae58c38fa4
+ms.openlocfilehash: b33333a49df11f0234193ca84fc2c3accdb6894d
+ms.sourcegitcommit: f1535713b66ff9b840f1138583746bc2bf182b4f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84421052"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91953657"
 ---
 # <a name="how-to-include-code-in-docs"></a>Включение кода в документы
 
@@ -354,15 +354,21 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 
 * `cloudshell-powershell` — активирует Cloud Shell в Azure PowerShell, как в предыдущем примере.
 * `cloudshell-bash` — включает Azure Cloud Shell
-* `try-dotnet` — активирует Try .NET.
-* `try-dotnet-class` — активирует Try .NET с формированием шаблонов классов.
-* `try-dotnet-method` — активирует Try .NET с формированием шаблонов методов.
+* `try-dotnet` — включает .NET Interactive.
+* `try-dotnet-class` — включает .NET Interactive с формированием шаблонов классов.
+* `try-dotnet-method` — включает .NET Interactive с формированием шаблонов методов.
 
 В Azure Cloud Shell и PowerShell Cloud Shell пользователи могут выполнять команды только с собственной учетной записью Azure.
 
+При использовании .NET Interactive содержимое блока кода будет зависеть от того, какой из трех вариантов формирования шаблонов вы выберете:
+
+* *Без формирования шаблонов* (`try-dotnet`). Блок кода должен представлять полный текст программы. Например, допустимым будет файл *Program.cs*, созданный `dotnet new console`. Это удобно для демонстрации программы небольшого размера целиком, включая все необходимые директивы `using`. Операторы верхнего уровня сейчас не поддерживаются.
+* *Формирование шаблонов методов* (`try-dotnet-method`). Блок кода должен представлять содержимое метода `Main` в консольном приложении. Вы можете учитывать директивы `using`, добавленные шаблоном `dotnet new console`. Этот вариант удобен для коротких фрагментов кода, которые демонстрируют использование одной функции.
+* *Формирование шаблонов классов* (`try-dotnet-class`). Блок кода должен представлять класс с методом `Main`, который выполняет для программы роль точки входа. Этот вариант можно использовать для демонстрации взаимодействия между элементами класса.
+
 ## <a name="snippet-syntax-reference"></a>Синтаксис ссылок на фрагменты
 
-Синтаксис
+Синтаксис:
 
 ```md
 :::code language="<language>" source="<path>" <attribute>="<attribute-value>":::
@@ -403,12 +409,12 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 | Ассемблер ARM                  | `armasm`, `arm`                                                                |
 | Ассемблер AVR                  | `avrasm`                                                                       |
 | ActionScript                   | `actionscript`, `as`                                                           |
-| Alan                           | `alan`, `i`                                                                    |
+| Алан                           | `alan`, `i`                                                                    |
 | AngelScript                    | `angelscript`, `asc`                                                           |
 | ANTLR                          | `antlr`                                                                        |
 | Apache                         | `apache`, `apacheconf`                                                         |
 | AppleScript                    | `applescript`, `osascript`                                                     |
-| Arcade                         | `arcade`                                                                       |
+| Аркады                         | `arcade`                                                                       |
 | AsciiDoc                       | `asciidoc`, `adoc`                                                             |
 | AspectJ                        | `aspectj`                                                                      |
 | ASPX                           | `aspx`                                                                         |
@@ -421,11 +427,11 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 | AzCopy                         | `azcopy`                                                                       |
 | Azure CLI                      | `azurecli`                                                                     |
 | Azure CLI (интерактивный)        | `azurecli-interactive`                                                         |
-| Azure Powershell               | `azurepowershell`                                                              |
+| Azure PowerShell               | `azurepowershell`                                                              |
 | Azure Powershell (интерактивный) | `azurepowershell-interactive`                                                  |
 | Bash                           | `bash`, `sh`, `zsh`                                                            |
 | Basic                          | `basic`                                                                        |
-| BNF                            | `bnf`                                                                          |
+| форма Бэкуса-Наура (BNF)                            | `bnf`                                                                          |
 | C                              | `c`                                                                            |
 | C#                             | `csharp`, `cs`                                                                 |
 | C# (интерактивный)               | `csharp-interactive`                                                           |
@@ -436,7 +442,7 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 | Cache Object Script            | `cos`, `cls`                                                                   |
 | CMake                          | `cmake`, `cmake.in`                                                            |
 | Coq                            | `coq`                                                                          |
-| CSP                            | `csp`                                                                          |
+| Поставщик служб шифрования                            | `csp`                                                                          |
 | CSS                            | `css`                                                                          |
 | Cap'n Proto                    | `capnproto`, `capnp`                                                           |
 | Clojure                        | `clojure`, `clj`                                                               |
@@ -450,7 +456,7 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 | DOS                            | `dos`, `bat`, `cmd`                                                            |
 | Dart                           | `dart`                                                                         |
 | Delphi                         | `delphi`, `dpr`, `dfm`, `pas`, `pascal`, `freepascal`, `lazarus`, `lpr`, `lfm` |
-| Diff                           | `diff`, `patch`                                                                |
+| Поиск различий                           | `diff`, `patch`                                                                |
 | Django                         | `django`, `jinja`                                                              |
 | Dockerfile                     | `dockerfile`, `docker`                                                         |
 | dsconfig                       | `dsconfig`                                                                     |
@@ -479,7 +485,7 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 | HTML                           | `html`, `xhtml`                                                                |
 | HTTP                           | `http`, `https`                                                                |
 | Haml                           | `haml`                                                                         |
-| Handlebars                     | `handlebars`, `hbs`, `html.hbs`, `html.handlebars`                             |
+| Рули                     | `handlebars`, `hbs`, `html.hbs`, `html.handlebars`                             |
 | Haskell                        | `haskell`, `hs`                                                                |
 | Haxe                           | `haxe`, `hx`                                                                   |
 | Hy                             | `hy`, `hylang`                                                                 |
@@ -493,7 +499,7 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 | Kusto                          | `kusto`                                                                        |
 | Leaf                           | `leaf`                                                                         |
 | Lasso                          | `lasso`, `ls`, `lassoscript`                                                   |
-| Less                           | `less`                                                                         |
+| Меньше                           | `less`                                                                         |
 | LDIF                           | `ldif`                                                                         |
 | Lisp                           | `lisp`                                                                         |
 | LiveCode Server                | `livecodeserver`                                                               |
@@ -536,7 +542,7 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 | Обработка                     | `processing`                                                                   |
 | Prolog                         | `prolog`                                                                       |
 | Свойства                     | `properties`                                                                   |
-| Буферы протоколов               | `protobuf`                                                                     |
+| Protocol Buffers               | `protobuf`                                                                     |
 | Puppet                         | `puppet`, `pp`                                                                 |
 | Python                         | `python`, `py`, `gyp`                                                          |
 | Результаты профилировщика Python        | `profile`                                                                      |
@@ -568,7 +574,7 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 | Stan                           | `stan`                                                                         |
 | Stata                          | `stata`                                                                        |
 | Структурированный текст                | `iecst`, `scl`, `stl`, `structured-text`                                       |
-| Stylus                         | `stylus`, `styl`                                                               |
+| Стилус                         | `stylus`, `styl`                                                               |
 | SubUnit                        | `subunit`                                                                      |
 | Supercollider                  | `supercollider`, `sc`                                                          |
 | Swift                          | `swift`                                                                        |
