@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 08/06/2020
-ms.openlocfilehash: 059ed8297956589a281cf11e4f7244e972565160
-ms.sourcegitcommit: 11228bd1d3dc1496820355096453f1eb2d28b33e
+ms.openlocfilehash: b7c6e4058d802db2e9dc391bfebc9f66b27c4023
+ms.sourcegitcommit: fe12c5eef9d05fa598e326c44248c2b9c68cca12
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92523477"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96755453"
 ---
 # <a name="labels-projects-and-milestones-roadmap"></a>Стратегия: метки, проекты и вехи
 
@@ -58,7 +58,6 @@ ms.locfileid: "92523477"
 - [Справочник по интерфейсам API](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20API%20Reference)
 - [Azure .NET SDK](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20Azure%20.NET%20SDk);
 - [Руководство по языку C#](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20C%23%20Guide)
-- [Руководство по классическим приложениям](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20Desktop%20Guide)
 - [Руководство по языку F#](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20F%23%20Guide)
 - [Руководство по ML.NET](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20ML.NET%20Guide)
 - [Руководство по архитектуре .NET](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20.NET%20Architecture%20Guide) — может быть удалено
